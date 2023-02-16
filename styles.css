@@ -21,3 +21,13 @@ button {
     color: #fcf8f8;
     background-color: #5c0a0a;
 }
+
+.header >*{
+    display: inline-block;
+    margin-top: 40px ;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+li {
+    display: inline;
+}

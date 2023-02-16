@@ -22,12 +22,47 @@ button {
     background-color: #5c0a0a;
 }
 
-.header >*{
-    display: inline-block;
-    margin-top: 40px ;
+.header{
+    margin-top: 30px ;
     margin-left: 20px;
     margin-right: 20px;
+    font-size: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.header >*{
+    display: inline-block;
+    font-size: 20px;
+    height: 100%;
+    vertical-align: middle;
+    line-height: 45px;
+   
+    
 }
 li {
     display: inline;
+}
+.logo{
+    
+    height: 100%;
+    
+}
+.navbar{
+   
+    text-align: left;
+    color: #0e0d0d;
+    font-weight: 500;
+    
+}
+
+
+.actions{
+    
+    text-align:left;
+    font-size: 14px;
+    
+}
+.actions >* {
+    margin-left: 15px;
+    margin-right: 15px;
 }

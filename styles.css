@@ -106,7 +106,7 @@ li {
 }
 
 .features .feature-card .feature-content {
-    padding: 20px 30px 30px 30px;
+    padding: 50px 30px 30px 30px;
     flex: 2;
     
 }
@@ -151,6 +151,54 @@ li {
     height: 100%;
 }
 
+.examen .examen-features h1{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #0c0c0c;
+    
+    
+}
+.examen .examen-features p{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fdfdfd;
+    
+    
+}
+
+.examen  >*{
+    
+    background-color: #b65050;
+   text-align: center; 
+    
+}
+.feature .feature-cards {
+    margin-bottom: 60px;
+    margin-left: 30px;
+    margin-right: 15px;
+    background-color: #fd9a9afd;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.feature .feature-cards .feature-figure img{
+        padding: 50px 30px 30px 30px;
+        flex: 2;
+        margin-bottom: 1rem;
+        width: 80px;
+    }
+
+    .feature{
+        display: flex;
+        padding: 5% 5%;
+        grid-template-columns: repeat(4, 550px); 
+       
+    }
+    .feature .feature-cards .feature-contents{
+        text-align: center;
+    }
 
 
 

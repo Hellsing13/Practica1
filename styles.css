@@ -258,11 +258,24 @@ li {
     h1{
         font-size: 30px;
     }
-    .features{
+    .publish > form{
+        flex-direction: column;
+        display: flex;
         
+    }
+    .publish > form > div {
+        height: 50px;
+        margin-top: 10px;
+    }
+    .publish > form > div > input{
+        width: 65%;
     }
     main{
         margin-top: 130px;
+    }
+
+    .features {
+        grid-template: repeat(4,1fr) /1fr;
     }
 
    

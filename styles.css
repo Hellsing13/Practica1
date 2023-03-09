@@ -252,9 +252,7 @@ li {
 
 @media (max-width:575px){
 
-    .navbar, .actions{
-        display: none;
-    }
+   
     h1{
         font-size: 30px;
     }

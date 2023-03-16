@@ -9,6 +9,27 @@
     <link rel="stylesheet" href="styles.css">  <!--llama a la hoja de estilos-->
     <script src="js/bootstrap.bundle.min.js"></script>
 
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+<script type="text/javascript">
+    function sendEmail() {
+        Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "alister13jk@gmail.com",
+                Password: "6C426DBCB065BCD777977D9B4EC0A44CEF03",
+                To: 'alister13jk@gmail.com',
+                From: "alister13jk@gmail.com",
+                Subject: "Sending Email using javascript",
+                Body: "Well that was easy!!",
+            })
+            .then(function (message) {
+                alert("mail sent successfully")
+            });
+    }
+    </script>
+
+
 </head>
 
 <body>
@@ -31,16 +52,16 @@
             <ul class="navbar-nav"> <!--Contenedor de la lista, li es para poner un punto antes -->
                  
                 <li  class="nav-item">
-                    <a href="Protogemas.html">Protogemas</a>
+                    <a class="nav-link" href="Protogemas.html">Protogemas</a>
                 </li>
                 <li  class="nav-item">
-                    <a href="">Mora</a>
+                    <a class="nav-link" href="">Mora</a>
                 </li>
                 <li  class="nav-item">
-                    <a href="">Personajes</a>
+                    <a class="nav-link" href="">Personajes</a>
                 </li>
                 <li  class="nav-item">
-                    <a href="">Gacha</a>
+                    <a class="nav-link" href="">Gacha</a>
                 </li>
             </ul>
         </div>
@@ -114,13 +135,14 @@
     <p class="h1">Unete ahora mismo</p>
     <p class="h5" style="color: darkred; "!important;>Si quieres saber más sobre Kaedehara Kazuha estas en el lugar correcto</p>
    
-    <form class="container-fluid pt-5 pb-5">
+    <form class="container-fluid pt-5 pb-5" method="POST">
         <div class="row">
           <div class="col">
             <input type="text" class="form-control" placeholder="Enter email" name="email">
           </div>
           <div class="col">
-           <button type="button" class="btn btn-danger">Unirse</button>
+           <button type="button" class="btn btn-danger" value="sendEmail" 
+           onclick="sendEmail()">Unirse</button>
           </div>
         </div>
       </form>
